@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaInstagram, FaSquareFacebook } from "react-icons/fa6";
@@ -56,10 +57,16 @@ const HeroSection = () => {
                 </div>
               </span>
             </button>
-            <div className="flex ">
-              <FaLinkedinIn className="mx-2 border rounded-full " size={35} fill="#ffffff" />
-              <FaInstagram className="mr-2" size={35} fill="#ffffff" />
-              <FaSquareFacebook className="mr-2" size={35} fill="#ffffff" />
+            <div className="flex flex-row items-center">
+              <Link href="https://instagram.com">
+                <FaLinkedinIn className="mx-2" size={35} fill="#ffffff" />
+              </Link>
+              <Link href="https://instagram.com">
+                <FaInstagram className="mr-2" size={35} fill="#ffffff" />
+              </Link>
+              <Link href="https://instagram.com">
+                <FaSquareFacebook className="mr-2" size={35} fill="#ffffff" />
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const imgLinks = [
   " /1.jpg",
   " /2.jpg",
@@ -17,10 +17,12 @@ export default function Gallery() {
         {imgLinks.map((imgs, index) => (
           <div key={index} class="sm:flex sm:w-1/3 flex-wrap">
             <div className="w-full p-1 md:p-2">
-              <img
+              <Image 
                 alt="gallery"
                 className="block w-full rounded-lg object-cover object-center"
                 src={imgs}
+                width={400}
+                height={400}
               />
             </div>
           </div>

@@ -1,12 +1,12 @@
 import React from "react";
 
 const imgLinks = [
-  " /pictures/1.jpg",
-  " /pictures/2.jpg",
-  " /pictures/3.jpg",
-  " /pictures/4.jpg",
-  " /pictures/5.jpg",
-  " /pictures/6.jpg",
+  " /1.jpg",
+  " /2.jpg",
+  " /3.jpg",
+  " /4.jpg",
+  " /5.jpg",
+  " /6.jpg",
 ];
 
 export default function Gallery() {

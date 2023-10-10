@@ -4,7 +4,6 @@ import { Inter, Quicksand } from "next/font/google";
 import HeroSection from "@/components/herosection";
 import Navbar from "@/components/navbar";
 import AboutSection from "@/components/about-section";
-import ImageSlider from "@/components/image-slide";
 import Gallery from "@/components/gallery";
 import EmailSection from "@/components/Email";
 import Footer from "@/components/footer";

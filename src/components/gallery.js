@@ -11,15 +11,15 @@ const imgLinks = [
 
 export default function Gallery() {
   return (
-    <div class="container mx-auto px-5 py-2 ">
+    <div className="container mx-auto px-5 py-2 ">
       <h1 className="text-2xl sm:text-4xl font-bold text-white mb-4 text-center">My Pictures</h1>
-      <div class="-m-1 sm:flex flex-wrap md:-m-2">
+      <div className="-m-1 sm:flex flex-wrap md:-m-2">
         {imgLinks.map((imgs, index) => (
           <div key={index} class="sm:flex sm:w-1/3 flex-wrap">
-            <div class="w-full p-1 md:p-2">
+            <div className="w-full p-1 md:p-2">
               <img
                 alt="gallery"
-                class="block w-full rounded-lg object-cover object-center"
+                className="block w-full rounded-lg object-cover object-center"
                 src={imgs}
               />
             </div>

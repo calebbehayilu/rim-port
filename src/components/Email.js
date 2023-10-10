@@ -6,7 +6,7 @@ const EmailSection = () => {
       id="contact"
       className="my-12 md:my-12 py-24 flex flex-col place-items-center"
     >
-      <div className="w-1/2">
+      <div className="sm:w-1/2">
         <form className="flex flex-col ">
           <div className="mb-6">
             <label

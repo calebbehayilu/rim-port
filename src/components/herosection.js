@@ -8,37 +8,30 @@ const HeroSection = () => {
   return (
     <section>
       {/* Hero Section  */}
-      <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl  lg:text-6xl font-extrabold">
+      <div className="flex justify-center ">
+        <div className=" place-self-center text-center ">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hi, I Am
             </span>
             <br />
             <TypeAnimation
-              sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Rim",
-                2000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Hidaya",
-                2000,
-              ]}
+              sequence={["Rim", 2000, "Hidaya", 2000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] mb-6 text-base sm:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
-            inventore!
+          Dedicated pharmacist graduate with a passion for helping patients and improving public health.
           </p>
-          <div className="flex ">
+          <div className="flex flex-col justify-center items-center">
             <button
-              className="px-1 py-1 rounded-full bg-transparent bg-gradient-to-br from-blue-500 
+              className="w-fit px-1 py-1 rounded-full bg-transparent bg-gradient-to-br from-blue-500 
            via-purple-500 to-pink-500 hover:bg-slate-800 text-white "
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <div className="flex gap-2">
+                <div className="flex ">
                   Download CV
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,29 +50,17 @@ const HeroSection = () => {
                 </div>
               </span>
             </button>
-            <div className="flex flex-row items-center">
-              <Link href="https://instagram.com">
+            <div className="flex flex-row items-center mt-5">
+              <Link href="https://linkedin.com">
                 <FaLinkedinIn className="mx-2" size={35} fill="#ffffff" />
               </Link>
               <Link href="https://instagram.com">
                 <FaInstagram className="mr-2" size={35} fill="#ffffff" />
               </Link>
-              <Link href="https://instagram.com">
+              <Link href="https://facebook.com">
                 <FaSquareFacebook className="mr-2" size={35} fill="#ffffff" />
               </Link>
             </div>
-          </div>
-        </div>
-
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] relative">
-            <Image
-              className=" absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              src={"/image-1.png"}
-              width={200}
-              height={200}
-              alt="image 1"
-            />
           </div>
         </div>
       </div>
